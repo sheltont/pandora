@@ -1,0 +1,2 @@
+defmodule Avatar do
+end

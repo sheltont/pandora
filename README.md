@@ -1,2 +1,4 @@
-# pandora
-Shanghai fucking online game
+# Pandora
+
+**TODO: Add description**
+
