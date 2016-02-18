@@ -1,4 +1,4 @@
-defmodule Avatar do
+defmodule Human do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -8,12 +8,12 @@ defmodule Avatar do
 
     children = [
       # Define workers and child supervisors to be supervised
-      # worker(Avatar.Worker, [arg1, arg2, arg3]),
+      # worker(Human.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Avatar.Supervisor]
+    opts = [strategy: :one_for_one, name: Human.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

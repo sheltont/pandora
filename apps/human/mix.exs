@@ -1,8 +1,8 @@
-defmodule Commander.Mixfile do
+defmodule Human.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :commander,
+    [app: :human,
      version: "0.0.1",
      build_path: "../../_build",
      config_path: "../../config/config.exs",
@@ -18,7 +18,8 @@ defmodule Commander.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger],
+     mod: {Human, []}]
   end
 
   # Dependencies can be Hex packages:

@@ -1,6 +1,6 @@
-defmodule CommanderTest do
+defmodule HumanTest do
   use ExUnit.Case
-  doctest Commander
+  doctest Human
 
   test "the truth" do
     assert 1 + 1 == 2
